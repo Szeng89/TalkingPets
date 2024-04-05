@@ -1,3 +1,4 @@
+import io.zipcoder.polymorphism.Pet;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -33,6 +34,20 @@ public class PetTest {
         Pet pet = new Pet(name);
 
         Assert.assertEquals(name, pet.getName());
+    }
+
+
+    @Test
+    public void setTest() {
+        Pet pet = new Pet();
+        String expectedName = "baby";
+
+        pet.setName(expectedName);
+        String actualName = pet.getName();
+
+        Assert.assertEquals(expectedName, actualName);
+
+
     }
 
     @Test

@@ -1,3 +1,5 @@
+package io.zipcoder.polymorphism;
+
 public class Pet {
     private String name;
     private int age;
@@ -26,5 +28,9 @@ public class Pet {
 
     public String speak() {
         return "Speaking";
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

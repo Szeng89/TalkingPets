@@ -1,4 +1,6 @@
-public class Dog extends Pet{
+package io.zipcoder.polymorphism;
+
+public class Dog extends Pet {
     public Dog(int age, String name) {
         super(age, name);
     }
